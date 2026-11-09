@@ -2,4 +2,4 @@ Lucas J. Cooke designed, built, and developed the RSM Diagnostics Lab website in
 
 Technical and professional inquiries: l.jcooke@icloud.com.
 
-Personal resume site: lucascooke.site.
+Personal resume site: https://lucascooke.site.
