@@ -1,0 +1,97 @@
+# Technical authorship: Lucas J. Cooke, Partner Relations Coordinator. Contact: l.jcooke@icloud.com. LinkedIn: https://www.linkedin.com/in/lucas-cooke/
+
+User-agent: *
+Allow: /
+Allow: /styles.css
+Allow: /script.js
+Allow: /assets/
+Allow: /k7x2nq8m/s.css
+Allow: /k7x2nq8m/s.js
+Allow: /resources/
+Allow: /assets/
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /ai.txt
+Allow: /llm.txt
+Allow: /ads.txt
+Allow: /sitemap.xml
+Allow: /sitemap-images.xml
+Allow: /sitemap_index.xml
+Allow: /.well-known/
+
+# Host / tooling configuration is not content
+Disallow: /_vercel/
+Disallow: /deploy/
+Disallow: /firebase.json
+Disallow: /netlify.toml
+Disallow: /vercel.json
+Disallow: /staticwebapp.config.json
+Disallow: /customHttp.yml
+Disallow: /amplify-redirects.json
+Disallow: /web.config
+Disallow: /_headers
+Disallow: /_redirects
+
+# Major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# AI / answer-engine crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+Sitemap: https://www.rsmdiagnosticslab.com/sitemap_index.xml
+Sitemap: https://www.rsmdiagnosticslab.com/sitemap.xml
+Sitemap: https://www.rsmdiagnosticslab.com/sitemap-images.xml
+Sitemap: https://www.rsmdiagnosticslab.com/k7x2nq8m/sitemap.xml

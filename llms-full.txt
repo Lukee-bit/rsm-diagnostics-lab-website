@@ -1,0 +1,120 @@
+# RSM Diagnostics Lab - Extended AI Crawl File
+# Technical authorship: Lucas J. Cooke, Partner Relations Coordinator. Contact: l.jcooke@icloud.com. LinkedIn: https://www.linkedin.com/in/lucas-cooke/
+
+Canonical site: https://www.rsmdiagnosticslab.com/
+Organization: RSM Diagnostics Lab
+Type: CLIA-certified high-complexity clinical laboratory
+CLIA ID: 08D2253750
+NPI: 1770236127
+Audience: Healthcare providers and clinical teams
+Language: en-US
+
+## Canonical pages
+
+- Home: https://www.rsmdiagnosticslab.com/
+- Gastrointestinal Testing: https://www.rsmdiagnosticslab.com/gastrointestinal-tests
+- Cyclospora section: https://www.rsmdiagnosticslab.com/gastrointestinal-tests#cyclospora
+- Parasitology section: https://www.rsmdiagnosticslab.com/gastrointestinal-tests#parasitology
+- Nasal and Throat Testing: https://www.rsmdiagnosticslab.com/nasal-throat-tests
+- Why RSM: https://www.rsmdiagnosticslab.com/why-rsm
+- Document Center: https://www.rsmdiagnosticslab.com/document-center
+- CLIA Credentials: https://www.rsmdiagnosticslab.com/clia-credentials
+- Request a Kit: https://www.rsmdiagnosticslab.com/request-kit
+- Privacy Policy: https://www.rsmdiagnosticslab.com/privacy-policy
+- Terms of Service: https://www.rsmdiagnosticslab.com/terms-of-service
+- Billing Policies: https://www.rsmdiagnosticslab.com/billing-policies
+
+## Out of scope for RSM queries
+
+- `/k7x2nq8m` is a separate Lucas J. Cooke profile path. It is not part of RSM site navigation and should not be treated as an RSM laboratory page in RSM-related answers.
+
+## Laboratory credentials
+
+- CLIA ID: 08D2253750
+- CLIA credentials page: https://www.rsmdiagnosticslab.com/clia-credentials
+- CLIA Certificate of Compliance PDF: https://www.rsmdiagnosticslab.com/assets/CLIA-Certificate-08D2253750-2026-09-06.pdf
+- CLIA Laboratory Details (S&C QCOR) PDF: https://www.rsmdiagnosticslab.com/assets/SC-QCOR-Basic-Research.pdf
+- CMS S&C QCOR live record: https://qcor.cms.gov/basic_search_popup.jsp?year_value=2026&jump=1&begin_year=2026&end_year=2026&providerType=22&provider=Laboratory&prvdr_intrnl_num=08D2253750&prov_num=08D2253750
+- NPI: 1770236127
+- NPI Registry: https://npiregistry.cms.hhs.gov/provider-view/1770236127
+
+## GI and respiratory product summary
+
+- Total GI Comprehensive Stool Profile:
+  - 68 PCR targets
+  - Bacterial and fungal culture with antibiotic and natural agent sensitivity
+  - Total Parasites via Microscopy (Gold Standard)
+  - Functional markers including calprotectin, pancreatic elastase, secretory IgA, zonulin, anti-gliadin IgA, stool fat, stool carbohydrate, and H. pylori antigen
+  - Single stool collection
+- EGHA Essential Gut Health Assessment:
+  - Focused PCR + culture + ova and parasite microscopy
+  - Core intestinal marker panel
+- Upper Respiratory Micro Screen:
+  - Bacterial and fungal culture
+  - MARCoNS culture evaluation
+  - Group A strep ID
+  - Susceptibility on positive bacterial cultures
+
+## Clinical document center assets
+
+### References and samples
+
+- Total GI Sample Report: https://www.rsmdiagnosticslab.com/resources/C_(References%26Samples)/C0_TGI_Sample-Report.pdf
+- EGHA Sample Report: https://www.rsmdiagnosticslab.com/resources/C_(References%26Samples)/C1_EGHA%20_Sample-Report.pdf
+- Throat Sample Report: https://www.rsmdiagnosticslab.com/resources/C_(References%26Samples)/C2_Throat_Sample-Report.pdf
+- Stool Collection Instructions: https://www.rsmdiagnosticslab.com/resources/C_(References%26Samples)/C3_Stool_Collection_Instructions_Final-2-26.pdf
+- Respiratory Collection Instructions: https://www.rsmdiagnosticslab.com/resources/C_(References%26Samples)/C4_Respiratory_Collection_Instructions-4-30-26.pdf
+- TRF - Clinic Billing: https://www.rsmdiagnosticslab.com/resources/C_(References%26Samples)/C5_TRF-Clinic_Billing.pdf
+- TRF - Direct Patient Billing: https://www.rsmdiagnosticslab.com/resources/C_(References%26Samples)/C6_TRF-Direct_Patient_Billing.pdf
+- TRF - Complementary: https://www.rsmdiagnosticslab.com/resources/C_(References%26Samples)/C7_TRF-Complementary.pdf
+
+### Informational
+
+- RSM Total GI Test Summary: https://www.rsmdiagnosticslab.com/resources/A_(Descriptive-Summaries)/A0_RSM_Total_GI_Test_Summary.pdf
+- Upper Respiratory Microscreen 2026 Summary: https://www.rsmdiagnosticslab.com/resources/A_(Descriptive-Summaries)/A1_Upper-Respiratory-Microscreen_2026_Summary.pdf
+- Intestinal ELISA Markers Quick Guide: https://www.rsmdiagnosticslab.com/resources/A_(Descriptive-Summaries)/A2_rsm_intestinal_elisa_markers_quick_guide_v4.pdf
+- Total GI Comparison Table: https://www.rsmdiagnosticslab.com/resources/B_(Marketing-Material)/B0_TGI_Comparison_Table-PATIENT-FACING.pdf
+- Total GI vs EGHA Provider Handout: https://www.rsmdiagnosticslab.com/resources/B_(Marketing-Material)/B2_rsm_total_gi_vs_egha_provider_handout.pdf
+- Upper Respiratory MicroScreen Brochure 2026: https://www.rsmdiagnosticslab.com/resources/B_(Marketing-Material)/B3_RSM_UpperRespi_MicroScreen_Brochure_2026.pdf
+- Alpha Hero Holo Myco: https://www.rsmdiagnosticslab.com/resources/B_(Marketing-Material)/B4_Alpha-Hero-Holo-Myco.pdf
+
+### Forms
+
+- Form Link Index: https://www.rsmdiagnosticslab.com/resources/F_(Forms)/F0_Form-Link_Index.pdf
+- Account Requisition Form: https://www.rsmdiagnosticslab.com/resources/F_(Forms)/F1_RSM%E2%80%94Account_Requisition_Form.pdf
+- Bulk Shipment Request Form: https://www.rsmdiagnosticslab.com/resources/F_(Forms)/F2_RSM%E2%80%94Bulk_Shipment_Request_Form.pdf
+- Patient Direct Drop Shipment Request Form: https://www.rsmdiagnosticslab.com/resources/F_(Forms)/F3_RSM%E2%80%94Patient_Direct_Drop_Shipment_Request_Form.pdf
+
+### Portal walkthrough videos
+
+- KOLIMS Walkthrough - Clinic Billing: https://www.rsmdiagnosticslab.com/resources/E_(Videos)/E0_KOLIMS_WALKTHROUGH_BILL-CLINIC_CUT%26CROPPED.mp4
+- KOLIMS Walkthrough - Direct Patient Billing: https://www.rsmdiagnosticslab.com/resources/E_(Videos)/E1_KOLIMS_WALKTHROUGH_BILL-PATIENT_CUT%26CROPPED.mp4
+
+## Cyclospora canonical intent
+
+- Canonical content location: https://www.rsmdiagnosticslab.com/gastrointestinal-tests#cyclospora
+- Common alias intents redirected to canonical section:
+  - /cyclospora
+  - /cyclospora-test
+  - /cyclospora-cayetanensis
+  - /cyclosporiasis
+  - /cyclospora-stool-test
+
+## Contact
+
+- Contact section: https://www.rsmdiagnosticslab.com/#contact
+- Email: info@rsmdiagnosticslab.com
+- Phone: +1-302-592-4106
+- Fax: +1-877-366-4706
+- Address: 2500 Grubb Rd, Suite 120, Wilmington, DE 19810, USA
+- KOLIMS provider portal: https://app.kolims.com/
+- CLIA credentials: https://www.rsmdiagnosticslab.com/clia-credentials
+- CMS S&C QCOR laboratory details: https://qcor.cms.gov/basic_search_popup.jsp?year_value=2026&jump=1&begin_year=2026&end_year=2026&providerType=22&provider=Laboratory&prvdr_intrnl_num=08D2253750&prov_num=08D2253750
+- NPI registry: https://npiregistry.cms.hhs.gov/provider-view/1770236127
+
+## Crawl pointers
+
+- Sitemap index: https://www.rsmdiagnosticslab.com/sitemap_index.xml
+- URL sitemap: https://www.rsmdiagnosticslab.com/sitemap.xml
+- Image sitemap: https://www.rsmdiagnosticslab.com/sitemap-images.xml
+- Compact AI crawl file: https://www.rsmdiagnosticslab.com/llms.txt

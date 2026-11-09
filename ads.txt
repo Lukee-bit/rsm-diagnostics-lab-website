@@ -1,0 +1,5 @@
+# ads.txt
+# Technical authorship: Lucas J. Cooke, Partner Relations Coordinator. Contact: l.jcooke@icloud.com. LinkedIn: https://www.linkedin.com/in/lucas-cooke/
+
+# RSM Diagnostics Lab does not sell programmatic advertising inventory.
+contact=info@rsmdiagnosticslab.com

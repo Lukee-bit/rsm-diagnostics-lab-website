@@ -1,0 +1,45 @@
+# Netlify / Cloudflare Pages redirects
+# Canonical production host: https://www.rsmdiagnosticslab.com
+# Technical authorship: Lucas J. Cooke, Partner Relations Coordinator. Contact: l.jcooke@icloud.com. LinkedIn: https://www.linkedin.com/in/lucas-cooke/
+
+# Force the canonical www host
+http://rsmdiagnosticslab.com/*     https://www.rsmdiagnosticslab.com/:splat   301!
+https://rsmdiagnosticslab.com/*    https://www.rsmdiagnosticslab.com/:splat   301!
+http://www.rsmdiagnosticslab.com/* https://www.rsmdiagnosticslab.com/:splat   301!
+
+# Single homepage URL
+/index.html                        /                                          301!
+
+# Legacy URL from the gastrointestinal page rename
+/gut-gastrointestinal-tests.html   /gastrointestinal-tests                    301!
+/gut-gastrointestinal-tests        /gastrointestinal-tests                    301!
+
+# Retired SEO-only clinical insights pages → primary product destinations
+/clinical-insights.html                      /                                     301!
+/clinical-insights                           /                                     301!
+/insight-stool-inflammatory-markers.html     /gastrointestinal-tests                301!
+/insight-stool-inflammatory-markers          /gastrointestinal-tests                301!
+/insight-marcons-culture-testing.html        /nasal-throat-tests#marcons            301!
+/insight-marcons-culture-testing             /nasal-throat-tests#marcons            301!
+/insight-pcr-and-culture-together.html       /gastrointestinal-tests                301!
+/insight-pcr-and-culture-together            /gastrointestinal-tests                301!
+
+# Public pages: strip .html (Netlify pretty URLs also do this; keep explicit)
+/why-rsm.html                      /why-rsm                                   301!
+/nasal-throat-tests.html           /nasal-throat-tests                        301!
+/privacy-policy.html               /privacy-policy                            301!
+/gastrointestinal-tests.html       /gastrointestinal-tests                    301!
+/document-center.html              /document-center                           301!
+/request-kit.html                  /request-kit                               301!
+/terms-of-service.html             /terms-of-service                          301!
+/billing-policies.html             /billing-policies                          301!
+/clia-credentials.html             /clia-credentials                          301!
+
+# Retired provider comparison PDF → current provider handout
+/resources/B_(Marketing-Material)/B1_TGI_Comparison_Table-PROVIDER-FACING.pdf  /resources/B_(Marketing-Material)/B2_rsm_total_gi_vs_egha_provider_handout.pdf  301!
+
+# Form PDF renumbering (legacy filenames)
+/resources/F_(Forms)/F0_RSM—Account_Requisition_Form.pdf                        /resources/F_(Forms)/F1_RSM—Account_Requisition_Form.pdf  301!
+/resources/F_(Forms)/F1_RSM—Bulk_Shipment_Request_Form.pdf                     /resources/F_(Forms)/F2_RSM—Bulk_Shipment_Request_Form.pdf  301!
+/resources/F_(Forms)/F2_RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf        /resources/F_(Forms)/F3_RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf  301!
+/resources/F_(Forms)/F2__RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf     /resources/F_(Forms)/F3_RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf  301!

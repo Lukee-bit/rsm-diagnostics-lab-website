@@ -1,0 +1,237 @@
+{
+  "routes": [
+    {
+      "route": "/index.html",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/gut-gastrointestinal-tests.html",
+      "redirect": "/gastrointestinal-tests",
+      "statusCode": 301
+    },
+    {
+      "route": "/gut-gastrointestinal-tests",
+      "redirect": "/gastrointestinal-tests",
+      "statusCode": 301
+    },
+    {
+      "route": "/clinical-insights.html",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/clinical-insights",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/insight-stool-inflammatory-markers.html",
+      "redirect": "/gastrointestinal-tests",
+      "statusCode": 301
+    },
+    {
+      "route": "/insight-stool-inflammatory-markers",
+      "redirect": "/gastrointestinal-tests",
+      "statusCode": 301
+    },
+    {
+      "route": "/insight-marcons-culture-testing.html",
+      "redirect": "/nasal-throat-tests#marcons",
+      "statusCode": 301
+    },
+    {
+      "route": "/insight-marcons-culture-testing",
+      "redirect": "/nasal-throat-tests#marcons",
+      "statusCode": 301
+    },
+    {
+      "route": "/insight-pcr-and-culture-together.html",
+      "redirect": "/gastrointestinal-tests",
+      "statusCode": 301
+    },
+    {
+      "route": "/insight-pcr-and-culture-together",
+      "redirect": "/gastrointestinal-tests",
+      "statusCode": 301
+    },
+    {
+      "route": "/why-rsm.html",
+      "redirect": "/why-rsm",
+      "statusCode": 301
+    },
+    {
+      "route": "/nasal-throat-tests.html",
+      "redirect": "/nasal-throat-tests",
+      "statusCode": 301
+    },
+    {
+      "route": "/privacy-policy.html",
+      "redirect": "/privacy-policy",
+      "statusCode": 301
+    },
+    {
+      "route": "/gastrointestinal-tests.html",
+      "redirect": "/gastrointestinal-tests",
+      "statusCode": 301
+    },
+    {
+      "route": "/document-center.html",
+      "redirect": "/document-center",
+      "statusCode": 301
+    },
+    {
+      "route": "/request-kit.html",
+      "redirect": "/request-kit",
+      "statusCode": 301
+    },
+    {
+      "route": "/terms-of-service.html",
+      "redirect": "/terms-of-service",
+      "statusCode": 301
+    },
+    {
+      "route": "/clia-credentials.html",
+      "redirect": "/clia-credentials",
+      "statusCode": 301
+    },
+    {
+      "route": "/billing-policies.html",
+      "redirect": "/billing-policies",
+      "statusCode": 301
+    },
+    {
+      "route": "/resources/F_(Forms)/F0_RSM—Account_Requisition_Form.pdf",
+      "redirect": "/resources/F_(Forms)/F1_RSM—Account_Requisition_Form.pdf",
+      "statusCode": 301
+    },
+    {
+      "route": "/resources/F_(Forms)/F1_RSM—Bulk_Shipment_Request_Form.pdf",
+      "redirect": "/resources/F_(Forms)/F2_RSM—Bulk_Shipment_Request_Form.pdf",
+      "statusCode": 301
+    },
+    {
+      "route": "/resources/F_(Forms)/F2_RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf",
+      "redirect": "/resources/F_(Forms)/F3_RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf",
+      "statusCode": 301
+    },
+    {
+      "route": "/resources/B_(Marketing-Material)/B1_TGI_Comparison_Table-PROVIDER-FACING.pdf",
+      "redirect": "/resources/B_(Marketing-Material)/B2_rsm_total_gi_vs_egha_provider_handout.pdf",
+      "statusCode": 301
+    },
+    {
+      "route": "/resources/F_(Forms)/F2__RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf",
+      "redirect": "/resources/F_(Forms)/F3_RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf",
+      "statusCode": 301
+    },
+    {
+      "route": "/why-rsm",
+      "rewrite": "/why-rsm.html"
+    },
+    {
+      "route": "/nasal-throat-tests",
+      "rewrite": "/nasal-throat-tests.html"
+    },
+    {
+      "route": "/privacy-policy",
+      "rewrite": "/privacy-policy.html"
+    },
+    {
+      "route": "/gastrointestinal-tests",
+      "rewrite": "/gastrointestinal-tests.html"
+    },
+    {
+      "route": "/document-center",
+      "rewrite": "/document-center.html"
+    },
+    {
+      "route": "/request-kit",
+      "rewrite": "/request-kit.html"
+    },
+    {
+      "route": "/terms-of-service",
+      "rewrite": "/terms-of-service.html"
+    },
+    {
+      "route": "/billing-policies",
+      "rewrite": "/billing-policies.html"
+    },
+    {
+      "route": "/clia-credentials",
+      "rewrite": "/clia-credentials.html"
+    },
+    {
+      "route": "/assets/*",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "route": "/resources/*",
+      "headers": {
+        "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+        "x-robots-tag": "index, follow"
+      }
+    },
+    {
+      "route": "/sitemap.xml",
+      "headers": {
+        "content-type": "application/xml; charset=utf-8",
+        "cache-control": "public, max-age=3600"
+      }
+    },
+    {
+      "route": "/sitemap-images.xml",
+      "headers": {
+        "content-type": "application/xml; charset=utf-8",
+        "cache-control": "public, max-age=3600"
+      }
+    },
+    {
+      "route": "/robots.txt",
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "cache-control": "public, max-age=3600"
+      }
+    },
+    {
+      "route": "/llms.txt",
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "cache-control": "public, max-age=3600",
+        "x-robots-tag": "index, follow"
+      }
+    },
+    {
+      "route": "/*",
+      "headers": {
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-frame-options": "SAMEORIGIN",
+        "permissions-policy": "geolocation=(), microphone=(), camera=()",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload"
+      }
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/404.html",
+    "exclude": [
+      "/assets/*",
+      "/resources/*",
+      "/*.{css,js,xml,txt,webmanifest,ico,png,jpg,jpeg,gif,svg,woff,woff2,pdf,mp4}"
+    ]
+  },
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Permissions-Policy": "geolocation=(), microphone=(), camera=()",
+    "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload"
+  },
+  "mimeTypes": {
+    ".webmanifest": "application/manifest+json",
+    ".xml": "application/xml",
+    ".txt": "text/plain"
+  }
+}

@@ -1,0 +1,137 @@
+# RSM Diagnostics Lab - Apache / LiteSpeed / cPanel production configuration
+# Canonical production host: https://www.rsmdiagnosticslab.com
+# Technical authorship: Lucas J. Cooke, Partner Relations Coordinator. Contact: l.jcooke@icloud.com. LinkedIn: https://www.linkedin.com/in/lucas-cooke/
+
+Options -Indexes
+
+# ----------------------------------------------------------------------
+# Canonical host and protocol
+# ----------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Force HTTPS
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^(.*)$ https://www.rsmdiagnosticslab.com/$1 [R=301,L]
+
+  # Force the www host so every URL matches the declared canonical
+  RewriteCond %{HTTP_HOST} !^www\. [NC]
+  RewriteRule ^(.*)$ https://www.rsmdiagnosticslab.com/$1 [R=301,L]
+
+  # Collapse /index.html to / so the homepage exists at a single URL
+  RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+  RewriteRule ^index\.html$ / [R=301,L]
+
+  # Legacy URL from the gastrointestinal page rename
+  RewriteRule ^gut-gastrointestinal-tests(\.html)?$ /gastrointestinal-tests [R=301,L]
+
+  # Retired clinical insights URLs (no longer public pages)
+  RewriteRule ^clinical-insights(\.html)?$ / [R=301,L]
+  RewriteRule ^insight-stool-inflammatory-markers(\.html)?$ /gastrointestinal-tests [R=301,L]
+  RewriteRule ^insight-marcons-culture-testing(\.html)?$ /nasal-throat-tests#marcons [R=301,L,NE]
+  RewriteRule ^insight-pcr-and-culture-together(\.html)?$ /gastrointestinal-tests [R=301,L]
+
+  # Legacy PDF filenames
+  Redirect 301 /resources/B_(Marketing-Material)/B1_TGI_Comparison_Table-PROVIDER-FACING.pdf /resources/B_(Marketing-Material)/B2_rsm_total_gi_vs_egha_provider_handout.pdf
+  Redirect 301 "/resources/F_(Forms)/F0_RSM—Account_Requisition_Form.pdf" "/resources/F_(Forms)/F1_RSM—Account_Requisition_Form.pdf"
+  Redirect 301 "/resources/F_(Forms)/F1_RSM—Bulk_Shipment_Request_Form.pdf" "/resources/F_(Forms)/F2_RSM—Bulk_Shipment_Request_Form.pdf"
+  Redirect 301 "/resources/F_(Forms)/F2_RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf" "/resources/F_(Forms)/F3_RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf"
+  Redirect 301 "/resources/F_(Forms)/F2__RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf" "/resources/F_(Forms)/F3_RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf"
+
+  # Redirect remaining .html page URLs to extensionless paths (keep 404.html internal)
+  RewriteCond %{THE_REQUEST} \s/+(.+)\.html[\s?] [NC]
+  RewriteCond %{THE_REQUEST} !\s/+404\.html[\s?] [NC]
+  RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+  # Serve /page from page.html without exposing the extension
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.+?)/?$ $1.html [L]
+
+  RewriteRule ^deploy/ - [F,L]
+  RewriteRule ^TECHNICAL_ - [F,L]
+</IfModule>
+
+# ----------------------------------------------------------------------
+# Custom error document
+# ----------------------------------------------------------------------
+ErrorDocument 404 /404.html
+
+# ----------------------------------------------------------------------
+# Compression: large HTML, CSS, and JSON-LD payloads benefit most
+# ----------------------------------------------------------------------
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/css text/plain text/xml application/javascript application/json application/xml image/svg+xml
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json application/xml image/svg+xml
+</IfModule>
+
+# ----------------------------------------------------------------------
+# Caching
+# ----------------------------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault                          "access plus 1 month"
+  ExpiresByType text/html                 "access plus 0 seconds"
+  ExpiresByType text/css                  "access plus 1 day"
+  ExpiresByType application/javascript    "access plus 1 day"
+  ExpiresByType image/png                 "access plus 1 year"
+  ExpiresByType image/jpeg                "access plus 1 year"
+  ExpiresByType image/x-icon              "access plus 1 year"
+  ExpiresByType application/pdf           "access plus 1 week"
+  ExpiresByType video/mp4                 "access plus 1 week"
+  ExpiresByType application/xml           "access plus 1 hour"
+  ExpiresByType text/plain                "access plus 1 hour"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Fingerprint-stable brand assets
+  <FilesMatch "\.(png|jpe?g|gif|ico|svg|woff2?)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=86400, stale-while-revalidate=604800"
+  </FilesMatch>
+  <FilesMatch "\.(pdf|mp4)$">
+    Header set Cache-Control "public, max-age=604800, stale-while-revalidate=86400"
+    # Clinical PDFs are indexable assets that rank for long-tail queries
+    Header set X-Robots-Tag "index, follow"
+  </FilesMatch>
+  <FilesMatch "^(d0|d1)\.pdf$">
+    Header set X-Robots-Tag "noindex, nofollow, noarchive, nosnippet"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+
+  # ----------------------------------------------------------------------
+  # Security headers
+  # ----------------------------------------------------------------------
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload" env=HTTPS
+</IfModule>
+
+# ----------------------------------------------------------------------
+# Correct content types and charset
+# ----------------------------------------------------------------------
+AddDefaultCharset UTF-8
+<IfModule mod_mime.c>
+  AddType application/xml .xml
+  AddType text/plain .txt
+  AddType application/manifest+json .webmanifest
+  AddCharset UTF-8 .html .css .js .xml .txt .webmanifest
+</IfModule>
+
+# ----------------------------------------------------------------------
+# Keep host configuration files for other platforms out of the response
+# ----------------------------------------------------------------------
+<FilesMatch "^(_headers|_redirects|vercel\.json|web\.config|\.htaccess|netlify\.toml|firebase\.json|staticwebapp\.config\.json|customHttp\.yml|amplify-redirects\.json)$">
+  Require all denied
+</FilesMatch>

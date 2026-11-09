@@ -1,0 +1,4 @@
+.env*
+deploy/
+preview-server.mjs
+AGENTS.md

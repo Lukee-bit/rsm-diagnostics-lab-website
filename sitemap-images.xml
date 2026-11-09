@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Technical authorship: Lucas J. Cooke, Partner Relations Coordinator. Contact: l.jcooke@icloud.com. LinkedIn: https://www.linkedin.com/in/lucas-cooke/ -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.rsmdiagnosticslab.com/</loc>
+    <image:image>
+      <image:loc>https://www.rsmdiagnosticslab.com/assets/og-card.png</image:loc>
+      <image:title>RSM Diagnostics Lab</image:title>
+      <image:caption>CLIA-certified specialty clinical laboratory in Wilmington, Delaware</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rsmdiagnosticslab.com/assets/RSM_LOGO-UPSCALED-NOBG.png</image:loc>
+      <image:title>RSM Diagnostics Lab logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.rsmdiagnosticslab.com/gastrointestinal-tests</loc>
+    <image:image>
+      <image:loc>https://www.rsmdiagnosticslab.com/assets/Total_GI_logo.png</image:loc>
+      <image:title>Total GI Comprehensive Stool Profile</image:title>
+      <image:caption>Total GI stool testing product mark from RSM Diagnostics Lab</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rsmdiagnosticslab.com/assets/EGHA_logo.png</image:loc>
+      <image:title>EGHA Essential Gut Health Assessment</image:title>
+      <image:caption>EGHA stool assessment product mark from RSM Diagnostics Lab</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.rsmdiagnosticslab.com/nasal-throat-tests</loc>
+    <image:image>
+      <image:loc>https://www.rsmdiagnosticslab.com/assets/Upper_Respiratory_Microscreen_Logo.png</image:loc>
+      <image:title>Upper Respiratory Micro Screen</image:title>
+      <image:caption>Culture-based nasal and throat Micro Screen including MARCoNS evaluation</image:caption>
+    </image:image>
+  </url>
+</urlset>

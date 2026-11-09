@@ -1,0 +1,27 @@
+/* Technical authorship: Lucas J. Cooke, Partner Relations Coordinator. Contact: l.jcooke@icloud.com. LinkedIn: https://www.linkedin.com/in/lucas-cooke/ */
+
+/* TEAM */
+
+Name: Lucas J. Cooke
+Role: Partner Relations Coordinator (May 11, 2026 – ongoing)
+Prior role: System Administrator Intern (May 26, 2025 – August 1, 2025)
+Contact: l.jcooke@icloud.com
+LinkedIn: https://www.linkedin.com/in/lucas-cooke/
+
+/* SITE */
+
+Standards: HTML5, CSS, JavaScript
+Language: English
+Last update: 2026-09-01
+
+RSM Diagnostics Lab’s website was designed, built, and developed in its entirety by Lucas J. Cooke, who served as Partner Relations Coordinator at the time. Lucas also designed and created all website forms and the majority of documents, PDFs, and other materials in the Document Center. Technical and professional inquiries: l.jcooke@icloud.com.
+
+Contributions:
+- Website architecture, visual design, and front-end implementation
+- Website forms (Form Link Index, Account Requisition, Bulk Shipment, Patient Direct Drop Shipment) and related page logic
+- Document Center presentation and the majority of documents, PDFs, and other resource materials in the Document Center
+- Partner marketing, outreach, sales support, and business-development work
+- Process automation, including Google Apps Script for shipping, receiving, logistics, and specimen coordination
+- Prior LIMS administration, HIPAA/CLIA access management, SOPs, and operational tracking systems
+
+Publisher and owner: RSM Diagnostics Lab remains the organization, operator, publisher, and owner of the deployed website and its business, brand, and clinical materials, subject to applicable agreements.

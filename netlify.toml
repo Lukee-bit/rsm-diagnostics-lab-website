@@ -1,0 +1,219 @@
+# Netlify production configuration
+# Canonical production host: https://www.rsmdiagnosticslab.com
+# Works with static deploys; redirects and headers also mirrored in _redirects / _headers.
+# Technical authorship: Lucas J. Cooke, Partner Relations Coordinator. Contact: l.jcooke@icloud.com. LinkedIn: https://www.linkedin.com/in/lucas-cooke/
+
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "http://rsmdiagnosticslab.com/*"
+  to = "https://www.rsmdiagnosticslab.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://rsmdiagnosticslab.com/*"
+  to = "https://www.rsmdiagnosticslab.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gut-gastrointestinal-tests.html"
+  to = "/gastrointestinal-tests"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gut-gastrointestinal-tests"
+  to = "/gastrointestinal-tests"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/clinical-insights.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/clinical-insights"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/insight-stool-inflammatory-markers.html"
+  to = "/gastrointestinal-tests"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/insight-stool-inflammatory-markers"
+  to = "/gastrointestinal-tests"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/insight-marcons-culture-testing.html"
+  to = "/nasal-throat-tests#marcons"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/insight-marcons-culture-testing"
+  to = "/nasal-throat-tests#marcons"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/insight-pcr-and-culture-together.html"
+  to = "/gastrointestinal-tests"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/insight-pcr-and-culture-together"
+  to = "/gastrointestinal-tests"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/why-rsm.html"
+  to = "/why-rsm"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/nasal-throat-tests.html"
+  to = "/nasal-throat-tests"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/privacy-policy.html"
+  to = "/privacy-policy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gastrointestinal-tests.html"
+  to = "/gastrointestinal-tests"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/document-center.html"
+  to = "/document-center"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/request-kit.html"
+  to = "/request-kit"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/terms-of-service.html"
+  to = "/terms-of-service"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/billing-policies.html"
+  to = "/billing-policies"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/clia-credentials.html"
+  to = "/clia-credentials"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/B_(Marketing-Material)/B1_TGI_Comparison_Table-PROVIDER-FACING.pdf"
+  to = "/resources/B_(Marketing-Material)/B2_rsm_total_gi_vs_egha_provider_handout.pdf"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/F_(Forms)/F0_RSM—Account_Requisition_Form.pdf"
+  to = "/resources/F_(Forms)/F1_RSM—Account_Requisition_Form.pdf"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/F_(Forms)/F1_RSM—Bulk_Shipment_Request_Form.pdf"
+  to = "/resources/F_(Forms)/F2_RSM—Bulk_Shipment_Request_Form.pdf"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/F_(Forms)/F2_RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf"
+  to = "/resources/F_(Forms)/F3_RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/F_(Forms)/F2__RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf"
+  to = "/resources/F_(Forms)/F3_RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/resources/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, stale-while-revalidate=86400"
+    X-Robots-Tag = "index, follow"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/sitemap-images.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/llms.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+    X-Robots-Tag = "index, follow"

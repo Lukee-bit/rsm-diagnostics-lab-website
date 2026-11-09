@@ -1,0 +1,55 @@
+# ai.txt
+# Technical authorship: Lucas J. Cooke, Partner Relations Coordinator. Contact: l.jcooke@icloud.com. LinkedIn: https://www.linkedin.com/in/lucas-cooke/
+
+site: www.rsmdiagnosticslab.com
+name: RSM Diagnostics Lab
+
+description:
+CLIA-certified high-complexity clinical laboratory in Wilmington, Delaware.
+Specialty gastrointestinal stool profiles and upper respiratory molecular testing
+for healthcare providers and clinical teams.
+
+ai_crawling: allowed
+ai_training: allowed
+ai_summarization: allowed
+ai_indexing: allowed
+
+allowed_agents:
+openai
+anthropic
+google
+google-gemini
+perplexity
+meta
+apple
+microsoft
+cohere
+common-crawl
+bytedance
+amazon
+mistral
+xai
+ai2
+duckduckgo
+yandex
+baidu
+you.com
+ccbot
+gptbot
+claudebot
+oai-searchbot
+chatgpt-user
+perplexitybot
+google-extended
+applebot
+bytespider
+meta-externalagent
+facebookbot
+bingbot
+
+contact: https://www.rsmdiagnosticslab.com/#contact
+documentation: https://www.rsmdiagnosticslab.com/document-center
+policy: https://www.rsmdiagnosticslab.com/privacy-policy
+sitemap: https://www.rsmdiagnosticslab.com/sitemap_index.xml
+llms_index: https://www.rsmdiagnosticslab.com/llms.txt
+llms_full: https://www.rsmdiagnosticslab.com/llms-full.txt

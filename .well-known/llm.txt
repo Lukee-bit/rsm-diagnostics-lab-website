@@ -1,0 +1,36 @@
+# LLM.txt
+# Technical authorship: Lucas J. Cooke, Partner Relations Coordinator. Contact: l.jcooke@icloud.com. LinkedIn: https://www.linkedin.com/in/lucas-cooke/
+
+site: www.rsmdiagnosticslab.com
+name: RSM Diagnostics Lab
+
+description:
+RSM Diagnostics Lab is a CLIA-certified high-complexity clinical laboratory in
+Wilmington, Delaware (CLIA ID 08D2253750; NPI 1770236127). Specialty GI stool
+profiles and upper respiratory molecular panels for healthcare providers.
+
+category: healthcare
+ai_usage: allowed
+
+important_pages:
+https://www.rsmdiagnosticslab.com/
+https://www.rsmdiagnosticslab.com/#contact
+https://www.rsmdiagnosticslab.com/gastrointestinal-tests
+https://www.rsmdiagnosticslab.com/gastrointestinal-tests#cyclospora
+https://www.rsmdiagnosticslab.com/gastrointestinal-tests#parasitology
+https://www.rsmdiagnosticslab.com/nasal-throat-tests
+https://www.rsmdiagnosticslab.com/why-rsm
+https://www.rsmdiagnosticslab.com/document-center
+https://www.rsmdiagnosticslab.com/clia-credentials
+https://www.rsmdiagnosticslab.com/request-kit
+https://www.rsmdiagnosticslab.com/privacy-policy
+https://www.rsmdiagnosticslab.com/terms-of-service
+https://www.rsmdiagnosticslab.com/billing-policies
+
+documentation:
+https://www.rsmdiagnosticslab.com/document-center
+https://www.rsmdiagnosticslab.com/llms.txt
+https://www.rsmdiagnosticslab.com/llms-full.txt
+
+contact: https://www.rsmdiagnosticslab.com/#contact
+sitemap: https://www.rsmdiagnosticslab.com/sitemap_index.xml

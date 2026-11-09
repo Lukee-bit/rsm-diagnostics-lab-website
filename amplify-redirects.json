@@ -1,0 +1,177 @@
+[
+  {
+    "source": "/index.html",
+    "status": "301",
+    "target": "/"
+  },
+  {
+    "source": "/gut-gastrointestinal-tests.html",
+    "status": "301",
+    "target": "/gastrointestinal-tests"
+  },
+  {
+    "source": "/gut-gastrointestinal-tests",
+    "status": "301",
+    "target": "/gastrointestinal-tests"
+  },
+  {
+    "source": "/clinical-insights.html",
+    "status": "301",
+    "target": "/"
+  },
+  {
+    "source": "/clinical-insights",
+    "status": "301",
+    "target": "/"
+  },
+  {
+    "source": "/insight-stool-inflammatory-markers.html",
+    "status": "301",
+    "target": "/gastrointestinal-tests"
+  },
+  {
+    "source": "/insight-stool-inflammatory-markers",
+    "status": "301",
+    "target": "/gastrointestinal-tests"
+  },
+  {
+    "source": "/insight-marcons-culture-testing.html",
+    "status": "301",
+    "target": "/nasal-throat-tests#marcons"
+  },
+  {
+    "source": "/insight-marcons-culture-testing",
+    "status": "301",
+    "target": "/nasal-throat-tests#marcons"
+  },
+  {
+    "source": "/insight-pcr-and-culture-together.html",
+    "status": "301",
+    "target": "/gastrointestinal-tests"
+  },
+  {
+    "source": "/insight-pcr-and-culture-together",
+    "status": "301",
+    "target": "/gastrointestinal-tests"
+  },
+  {
+    "source": "/why-rsm.html",
+    "status": "301",
+    "target": "/why-rsm"
+  },
+  {
+    "source": "/nasal-throat-tests.html",
+    "status": "301",
+    "target": "/nasal-throat-tests"
+  },
+  {
+    "source": "/privacy-policy.html",
+    "status": "301",
+    "target": "/privacy-policy"
+  },
+  {
+    "source": "/gastrointestinal-tests.html",
+    "status": "301",
+    "target": "/gastrointestinal-tests"
+  },
+  {
+    "source": "/document-center.html",
+    "status": "301",
+    "target": "/document-center"
+  },
+  {
+    "source": "/request-kit.html",
+    "status": "301",
+    "target": "/request-kit"
+  },
+    {
+      "source": "/terms-of-service.html",
+      "status": "301",
+      "target": "/terms-of-service"
+    },
+    {
+      "source": "/billing-policies.html",
+      "status": "301",
+      "target": "/billing-policies"
+    },
+    {
+      "source": "/clia-credentials.html",
+      "status": "301",
+      "target": "/clia-credentials"
+    },
+  {
+    "source": "/why-rsm",
+    "status": "200",
+    "target": "/why-rsm.html"
+  },
+  {
+    "source": "/nasal-throat-tests",
+    "status": "200",
+    "target": "/nasal-throat-tests.html"
+  },
+  {
+    "source": "/privacy-policy",
+    "status": "200",
+    "target": "/privacy-policy.html"
+  },
+  {
+    "source": "/gastrointestinal-tests",
+    "status": "200",
+    "target": "/gastrointestinal-tests.html"
+  },
+  {
+    "source": "/document-center",
+    "status": "200",
+    "target": "/document-center.html"
+  },
+  {
+    "source": "/request-kit",
+    "status": "200",
+    "target": "/request-kit.html"
+  },
+    {
+      "source": "/terms-of-service",
+      "status": "200",
+      "target": "/terms-of-service.html"
+    },
+    {
+      "source": "/billing-policies",
+      "status": "200",
+      "target": "/billing-policies.html"
+    },
+    {
+      "source": "/clia-credentials",
+      "status": "200",
+      "target": "/clia-credentials.html"
+    },
+  {
+    "source": "/resources/F_(Forms)/F0_RSM—Account_Requisition_Form.pdf",
+    "status": "301",
+    "target": "/resources/F_(Forms)/F1_RSM—Account_Requisition_Form.pdf"
+  },
+  {
+    "source": "/resources/F_(Forms)/F1_RSM—Bulk_Shipment_Request_Form.pdf",
+    "status": "301",
+    "target": "/resources/F_(Forms)/F2_RSM—Bulk_Shipment_Request_Form.pdf"
+  },
+  {
+    "source": "/resources/F_(Forms)/F2_RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf",
+    "status": "301",
+    "target": "/resources/F_(Forms)/F3_RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf"
+  },
+  {
+    "source": "/resources/B_(Marketing-Material)/B1_TGI_Comparison_Table-PROVIDER-FACING.pdf",
+    "status": "301",
+    "target": "/resources/B_(Marketing-Material)/B2_rsm_total_gi_vs_egha_provider_handout.pdf"
+  },
+  {
+    "source": "/resources/F_(Forms)/F2__RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf",
+    "status": "301",
+    "target": "/resources/F_(Forms)/F3_RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf"
+  },
+  {
+    "source": "/<*>",
+    "status": "404",
+    "target": "/404.html"
+  }
+]

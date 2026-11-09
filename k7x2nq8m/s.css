@@ -1,0 +1,542 @@
+/* Technical authorship: Lucas J. Cooke, Partner Relations Coordinator. Contact: l.jcooke@icloud.com. LinkedIn: https://www.linkedin.com/in/lucas-cooke/ */
+
+/* Letter-page chrome is desktop-only. On phones, 1in legal margins plus
+   0.7in resume padding leave almost no column width and force overflow. */
+body.p-k7 .section.section-legal,
+body.p-k7 .hero + .section.section-legal {
+  padding: clamp(1.15rem, 4vw, 1in);
+  padding-left: max(clamp(1rem, 4vw, 1in), env(safe-area-inset-left, 0px));
+  padding-right: max(clamp(1rem, 4vw, 1in), env(safe-area-inset-right, 0px));
+  overflow-x: clip;
+}
+
+.k7-n {
+  box-sizing: border-box;
+  max-width: min(8.5in, 100%);
+  width: 100%;
+  min-width: 0;
+  margin: 0 auto var(--space-8);
+  padding: 0;
+  overflow-wrap: break-word;
+}
+
+.k7-l {
+  box-sizing: border-box;
+  max-width: min(8.5in, 100%);
+  width: 100%;
+  min-width: 0;
+  margin: 0 auto;
+}
+
+.k7-r {
+  margin: 0 0 var(--space-4);
+  border: 1px solid var(--border);
+  background: var(--bg-surface);
+  scroll-margin-top: 6.5rem;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.k7-r:last-child {
+  margin-bottom: 0;
+}
+
+.k7-r-title {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--text-heading);
+  overflow-wrap: break-word;
+}
+
+.k7-r .resume-frame {
+  margin: 0;
+}
+
+.k7-r .resume-document {
+  margin: 0;
+  border: 0;
+}
+
+.k7-d {
+  padding: 0.75rem;
+  background: #fff;
+  min-width: 0;
+  overflow-x: clip;
+}
+
+/* Profile cards: LinkedIn · Handshake · Temple Fox MIS */
+.k7-profiles {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.15rem;
+  width: 100%;
+  max-width: min(8.5in, 100%);
+  margin: 0 auto var(--space-6);
+}
+
+.k7-profile-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 0;
+  min-height: 100%;
+  padding: 1.15rem 1.2rem 1.2rem;
+  border: 1px solid #d8dee6;
+  border-radius: 0.85rem;
+  background: #fff;
+  color: #172b4d;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.k7-profile-card:hover {
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.1);
+}
+
+.k7-profile-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.k7-profile-card--linkedin {
+  border-top: 3px solid #0a66c2;
+}
+
+.k7-profile-card--linkedin:hover {
+  border-color: #0a66c2;
+}
+
+.k7-profile-card--handshake {
+  border-top: 3px solid #1b3a57;
+}
+
+.k7-profile-card--handshake:hover {
+  border-color: #1b3a57;
+}
+
+.k7-profile-card--temple {
+  border-top: 3px solid #a41e35;
+}
+
+.k7-profile-card--temple:hover {
+  border-color: #a41e35;
+}
+
+.k7-profile-card__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.k7-profile-card--linkedin .k7-profile-card__brand {
+  color: #0a66c2;
+}
+
+.k7-profile-card--handshake .k7-profile-card__brand {
+  color: #1b3a57;
+}
+
+.k7-profile-card--temple .k7-profile-card__brand {
+  color: #a41e35;
+}
+
+.k7-profile-card__main {
+  display: flex;
+  align-items: center;
+  gap: 0.95rem;
+  min-width: 0;
+}
+
+.k7-profile-card__photo {
+  flex: 0 0 auto;
+  width: 5.25rem;
+  height: 5.25rem;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #e8eef4;
+  border: 1px solid #d0d7de;
+}
+
+.k7-profile-card__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.k7-profile-card__name {
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #0f172a;
+}
+
+.k7-profile-card__headline {
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: #334155;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.k7-profile-card__headline[hidden] {
+  display: none;
+}
+
+.k7-profile-card__cta {
+  margin-top: auto;
+  padding-top: 0.2rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.k7-profile-card--linkedin .k7-profile-card__cta {
+  color: #0a66c2;
+}
+
+.k7-profile-card--handshake .k7-profile-card__cta {
+  color: #1b3a57;
+}
+
+.k7-profile-card--temple .k7-profile-card__cta {
+  color: #a41e35;
+}
+
+.k7-profile-card:hover .k7-profile-card__cta {
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
+}
+
+[data-theme="dark"] .k7-profile-card {
+  background: #fff;
+  border-color: #d8dee6;
+  color: #172b4d;
+}
+
+@media screen and (max-width: 52rem) {
+  .k7-profiles {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .k7-profile-card {
+    transition: none;
+  }
+}
+
+/* Compact AI detector badge sits in the open space right of contact lines */
+.k7-contact-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
+  flex-wrap: nowrap;
+}
+
+.k7-contact-copy {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.k7-contact-copy > p {
+  margin-top: 0;
+  overflow-wrap: anywhere;
+}
+
+.k7-contact-copy > p + p {
+  margin-top: 0.65em;
+}
+
+.k7-ai-badge-link {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  margin-left: auto;
+  line-height: 0;
+  border-radius: 0.5rem;
+}
+
+.k7-ai-badge-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.k7-ai-badge-link img {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 220 / 40;
+  border: 0;
+}
+
+@media screen and (max-width: 30rem) {
+  .k7-contact-row {
+    flex-wrap: wrap;
+  }
+
+  .k7-ai-badge-link {
+    margin-left: 0;
+  }
+}
+
+/* Letter resume metrics: Helvetica sizes, section rules (from former d2 resume) */
+.resume-frame {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.resume-document {
+  box-sizing: border-box;
+  width: 8.5in;
+  margin: 0;
+  padding: 39.3pt 55pt 42pt;
+  background: #fff;
+  color: #000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 9.6pt;
+  line-height: 12.5pt;
+  border: 1px solid var(--border);
+  transform-origin: top left;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.resume-header {
+  margin: 0 0 10.5pt;
+}
+
+.resume-name {
+  margin: 0 0 5.4pt;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  font-weight: 700;
+  line-height: 18pt;
+  letter-spacing: 0;
+  text-align: center;
+  color: #000;
+  text-transform: none;
+}
+
+.resume-headline,
+.resume-contact,
+.resume-section-title,
+.resume-job-title,
+.resume-job-meta,
+.resume-job-note,
+.resume-summary,
+.resume-skills-list,
+.resume-job li {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
+.resume-headline {
+  margin: 0 0 4.3pt;
+  font-size: 11.3pt;
+  font-weight: 400;
+  line-height: 13pt;
+  text-align: center;
+}
+
+.resume-contact {
+  margin: 0;
+  font-size: 9.5pt;
+  line-height: 11.5pt;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.resume-contact a {
+  color: #000;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.resume-contact a:hover,
+.resume-contact a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.resume-section {
+  margin: 0 0 10.9pt;
+}
+
+.resume-section:last-of-type {
+  margin-bottom: 0;
+}
+
+.resume-section-title {
+  margin: 0 0 3.24pt;
+  padding: 0 0 6.96pt;
+  /* PDF rule is 0.7pt #222; 1px keeps the same weight when the letter page is scaled. */
+  border-bottom: 1px solid #222;
+  font-size: 11.5pt;
+  font-weight: 700;
+  line-height: 11.5pt;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.resume-summary {
+  margin: 0;
+  font-size: 9.6pt;
+  line-height: 12.5pt;
+}
+
+.resume-job {
+  margin: 0 0 6.65pt;
+}
+
+.resume-job:last-child {
+  margin-bottom: 0;
+}
+
+.resume-job-title {
+  margin: 0;
+  font-size: 10.3pt;
+  font-weight: 700;
+  line-height: 12pt;
+}
+
+.resume-job-meta {
+  margin: 2.3pt 0 0;
+  font-size: 9.1pt;
+  line-height: 11.3pt;
+}
+
+.resume-job-note {
+  margin: 3.2pt 0 0;
+  font-size: 8.9pt;
+  font-style: italic;
+  line-height: 11pt;
+}
+
+.resume-job ul {
+  margin: 4.2pt 0 0;
+  padding-left: 23pt;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+.resume-job li {
+  margin: 0 0 4.25pt;
+  padding: 0;
+  font-size: 9.35pt;
+  line-height: 12.1pt;
+}
+
+.resume-job li:last-child {
+  margin-bottom: 0;
+}
+
+.resume-job li::marker {
+  font-size: 8.3pt;
+  color: #000;
+}
+
+.resume-skills-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resume-skills-list > li {
+  margin: 0 0 4.4pt;
+  font-size: 9.2pt;
+  line-height: 12.1pt;
+}
+
+.resume-skills-list > li:last-child {
+  margin-bottom: 0;
+}
+
+.resume-skill-label {
+  font-weight: 700;
+}
+
+[data-theme="dark"] .resume-document {
+  background: #fff;
+  color: #000;
+  border-color: #ccc;
+}
+
+@media screen and (max-width: 48rem) {
+  body.p-k7 .section.section-legal,
+  body.p-k7 .hero + .section.section-legal {
+    padding-top: 1.25rem;
+    padding-bottom: 1.75rem;
+    padding-left: max(1rem, env(safe-area-inset-left, 0px));
+    padding-right: max(1rem, env(safe-area-inset-right, 0px));
+  }
+
+  body.p-k7 .k7-n.legal-prose,
+  body.p-k7 .k7-n.legal-document {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .k7-r-title {
+    font-size: 0.95rem;
+    padding: 0.85rem 0.85rem;
+  }
+
+  .k7-d {
+    padding: 0.55rem;
+  }
+}
+
+@media print {
+  body.p-k7 .breadcrumb,
+  body.p-k7 .k7-n,
+  body.p-k7 .k7-profiles,
+  body.p-k7 .k7-ai-badge-link {
+    display: none !important;
+  }
+
+  .resume-frame {
+    overflow: visible !important;
+    height: auto !important;
+  }
+
+  .resume-document {
+    border: none !important;
+    width: 8.5in !important;
+    padding: 39.3pt 55pt 42pt !important;
+    transform: none !important;
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 9.6pt !important;
+    color: #000 !important;
+    background: #fff !important;
+  }
+
+  body.p-k7 .k7-r-title {
+    display: none !important;
+  }
+
+  .k7-d {
+    padding: 0 !important;
+  }
+}

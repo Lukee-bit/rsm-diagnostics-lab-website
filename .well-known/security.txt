@@ -1,0 +1,6 @@
+# Technical authorship: Lucas J. Cooke, Partner Relations Coordinator. Contact: l.jcooke@icloud.com. LinkedIn: https://www.linkedin.com/in/lucas-cooke/
+Contact: mailto:info@rsmdiagnosticslab.com
+Expires: 2027-08-05T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://www.rsmdiagnosticslab.com/.well-known/security.txt
+Policy: https://www.rsmdiagnosticslab.com/privacy-policy

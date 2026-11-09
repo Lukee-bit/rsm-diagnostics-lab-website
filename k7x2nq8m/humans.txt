@@ -1,0 +1,25 @@
+/* Lucas J. Cooke — technical credits profile (/k7x2nq8m) */
+
+/* TEAM */
+
+Name: Lucas J. Cooke
+Role: Partner Relations Coordinator (May 11, 2026 – ongoing)
+Prior role: System Administrator Intern (May 26, 2025 – August 1, 2025)
+Contact: l.jcooke@icloud.com
+LinkedIn: https://www.linkedin.com/in/lucas-cooke/
+Site: https://lucascooke.site/
+
+/* SITE */
+
+Standards: HTML5, CSS, JavaScript
+Language: English
+Last update: 2026-10-15
+
+This profile documents Lucas J. Cooke’s technical and professional contributions to the RSM Diagnostics Lab website and related digital operations. RSM Diagnostics Lab remains the organization, operator, publisher, and owner of the deployed website and its business, brand, and clinical materials.
+
+Contributions:
+- Website architecture, visual design, and front-end implementation for rsmdiagnosticslab.com
+- Website forms and Document Center presentation
+- Partner marketing, outreach, sales support, and business-development work
+- Process automation, including Google Apps Script for shipping, receiving, logistics, and specimen coordination
+- Prior LIMS administration, HIPAA/CLIA access management, SOPs, and operational tracking systems

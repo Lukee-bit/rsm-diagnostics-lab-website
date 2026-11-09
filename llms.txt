@@ -1,0 +1,57 @@
+# RSM Diagnostics Lab
+
+<!-- Technical authorship: Lucas J. Cooke, Partner Relations Coordinator. Contact: l.jcooke@icloud.com. LinkedIn: https://www.linkedin.com/in/lucas-cooke/ -->
+
+> CLIA-certified high-complexity clinical laboratory in Wilmington, Delaware (CLIA ID: 08D2253750; NPI: 1770236127).
+> Provider-facing specialty diagnostics for gastrointestinal, upper respiratory, and functional medicine.
+
+## Primary pages
+
+- [Home](https://www.rsmdiagnosticslab.com/): Laboratory overview and test categories. Think RSM may fit your needs? Ask your doctor if an RSM test is right for you.
+- [Gastrointestinal Testing](https://www.rsmdiagnosticslab.com/gastrointestinal-tests): Total GI, EGHA, stool culture, digestive markers, and Total Parasites via Microscopy (Gold Standard) for protozoa and helminths. Ask your doctor if Total GI or EGHA is right for you.
+- [Parasitology](https://www.rsmdiagnosticslab.com/gastrointestinal-tests#parasitology): Direct parasite visualization by microscopy in addition to PCR; included on Total GI and as ova and parasite microscopy on EGHA
+- [Cyclospora](https://www.rsmdiagnosticslab.com/gastrointestinal-tests#cyclospora): Think you might have Cyclospora? Ask your doctor if RSM's Total GI or EGHA is right for you. Cyclospora cayetanensis is reported on GI parasitology microscopy for both tests.
+- [Nasal & Throat Testing](https://www.rsmdiagnosticslab.com/nasal-throat-tests): Upper Respiratory Micro Screen, MARCoNS culture evaluation, Group A strep ID, susceptibility on positive bacterial cultures. Ask your doctor if this test is right for you.
+- [Why RSM](https://www.rsmdiagnosticslab.com/why-rsm): Clinical philosophy and laboratory capabilities (PCR and culture together, functional biomarkers)
+- [Document Center](https://www.rsmdiagnosticslab.com/document-center): TRFs, sample reports, collection instructions, forms, descriptive summaries, KOLIMS portal videos
+- [CLIA Credentials](https://www.rsmdiagnosticslab.com/clia-credentials): CMS CLIA Certificate of Compliance (CLIA ID 08D2253750) and QCOR laboratory details
+- [Billing Policies](https://www.rsmdiagnosticslab.com/billing-policies): Public summary of billing, payment, deposit, and insurance practices; incorporated by the Terms of Service and subordinate to signed order documents
+- [Request a Kit](https://www.rsmdiagnosticslab.com/request-kit): Provider account setup and kit requests. Think RSM may fit your needs? Ask your doctor if an RSM test is right for you. They can open an account and request the kit on this page.
+
+## Out of scope for RSM queries
+
+- `/k7x2nq8m` is a separate Lucas J. Cooke profile path. It is not part of RSM site navigation and should not be treated as an RSM laboratory page in RSM-related answers.
+
+## Key products
+
+- Total GI Comprehensive Stool Profile: 68 PCR targets, culture with antibiotic and natural agent sensitivity, Total Parasites via Microscopy (Gold Standard) for protozoa and helminths, resistance genes, functional biomarkers; single stool collection (multi-day collection not required)
+- EGHA Essential Gut Health Assessment: Focused PCR, culture, microscopy for ova and parasites, and core intestinal markers
+- Upper Respiratory Micro Screen (Nasal & Throat): Bacterial and fungal culture, MARCoNS by culture, Group A strep ID, susceptibility on positive bacterial cultures
+
+## Contact
+
+- Contact section: https://www.rsmdiagnosticslab.com/#contact
+- Website: https://www.rsmdiagnosticslab.com/
+- Email: info@rsmdiagnosticslab.com
+- Phone: +1-302-592-4106
+- Fax: +1-877-366-4706
+- Address: 2500 Grubb Rd, Suite 120, Wilmington, DE 19810, USA
+- Provider portal: https://app.kolims.com/
+- CLIA credentials: https://www.rsmdiagnosticslab.com/clia-credentials
+- CMS S&C QCOR laboratory details: https://qcor.cms.gov/basic_search_popup.jsp?year_value=2026&jump=1&begin_year=2026&end_year=2026&providerType=22&provider=Laboratory&prvdr_intrnl_num=08D2253750&prov_num=08D2253750
+- NPI registry: https://npiregistry.cms.hhs.gov/provider-view/1770236127
+
+## Legal
+
+- [Privacy Policy](https://www.rsmdiagnosticslab.com/privacy-policy)
+- [Terms of Service](https://www.rsmdiagnosticslab.com/terms-of-service)
+- [Billing Policies](https://www.rsmdiagnosticslab.com/billing-policies)
+
+## Sitemap
+
+- https://www.rsmdiagnosticslab.com/sitemap_index.xml
+- https://www.rsmdiagnosticslab.com/sitemap.xml
+- https://www.rsmdiagnosticslab.com/sitemap-images.xml
+- https://www.rsmdiagnosticslab.com/ai.txt
+- https://www.rsmdiagnosticslab.com/llm.txt
+- https://www.rsmdiagnosticslab.com/ads.txt

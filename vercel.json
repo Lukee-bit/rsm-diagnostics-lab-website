@@ -1,0 +1,327 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/gut-gastrointestinal-tests.html",
+      "destination": "/gastrointestinal-tests",
+      "permanent": true
+    },
+    {
+      "source": "/gut-gastrointestinal-tests",
+      "destination": "/gastrointestinal-tests",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/clinical-insights.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/clinical-insights",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/insight-stool-inflammatory-markers.html",
+      "destination": "/gastrointestinal-tests",
+      "permanent": true
+    },
+    {
+      "source": "/insight-stool-inflammatory-markers",
+      "destination": "/gastrointestinal-tests",
+      "permanent": true
+    },
+    {
+      "source": "/insight-marcons-culture-testing.html",
+      "destination": "/nasal-throat-tests#marcons",
+      "permanent": true
+    },
+    {
+      "source": "/insight-marcons-culture-testing",
+      "destination": "/nasal-throat-tests#marcons",
+      "permanent": true
+    },
+    {
+      "source": "/insight-pcr-and-culture-together.html",
+      "destination": "/gastrointestinal-tests",
+      "permanent": true
+    },
+    {
+      "source": "/insight-pcr-and-culture-together",
+      "destination": "/gastrointestinal-tests",
+      "permanent": true
+    },
+    {
+      "source": "/clia-credentials.html",
+      "destination": "/clia-credentials",
+      "permanent": true
+    },
+    {
+      "source": "/billing-policies.html",
+      "destination": "/billing-policies",
+      "permanent": true
+    },
+    {
+      "source": "/resources/B_(Marketing-Material)/B1_TGI_Comparison_Table-PROVIDER-FACING.pdf",
+      "destination": "/resources/B_(Marketing-Material)/B2_rsm_total_gi_vs_egha_provider_handout.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/resources/F_(Forms)/F0_RSM—Account_Requisition_Form.pdf",
+      "destination": "/resources/F_(Forms)/F1_RSM—Account_Requisition_Form.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/resources/F_(Forms)/F1_RSM—Bulk_Shipment_Request_Form.pdf",
+      "destination": "/resources/F_(Forms)/F2_RSM—Bulk_Shipment_Request_Form.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/resources/F_(Forms)/F2_RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf",
+      "destination": "/resources/F_(Forms)/F3_RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/resources/F_(Forms)/F2__RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf",
+      "destination": "/resources/F_(Forms)/F3_RSM—Patient_Direct_Drop_Shipment_Request_Form.pdf",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    { "source": "/favicon.ico", "destination": "/assets/favicon.ico" },
+    { "source": "/why-rsm", "destination": "/why-rsm.html" },
+    {
+      "source": "/nasal-throat-tests",
+      "destination": "/nasal-throat-tests.html"
+    },
+    { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
+    {
+      "source": "/gastrointestinal-tests",
+      "destination": "/gastrointestinal-tests.html"
+    },
+    { "source": "/document-center", "destination": "/document-center.html" },
+    { "source": "/request-kit", "destination": "/request-kit.html" },
+    { "source": "/terms-of-service", "destination": "/terms-of-service.html" },
+    { "source": "/billing-policies", "destination": "/billing-policies.html" },
+    { "source": "/clia-credentials", "destination": "/clia-credentials.html" }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/resources/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800, stale-while-revalidate=86400"
+        },
+        { "key": "X-Robots-Tag", "value": "index, follow" }
+      ]
+    },
+    {
+      "source": "/styles.css",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    },
+    {
+      "source": "/script.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    },
+    {
+      "source": "/sitemap-images.xml",
+      "headers": [
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    },
+    {
+      "source": "/sitemap_index.xml",
+      "headers": [
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    },
+    {
+      "source": "/humans.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" },
+        { "key": "X-Robots-Tag", "value": "index, follow" }
+      ]
+    },
+    {
+      "source": "/ai.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" },
+        { "key": "X-Robots-Tag", "value": "index, follow" }
+      ]
+    },
+    {
+      "source": "/llm.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" },
+        { "key": "X-Robots-Tag", "value": "index, follow" }
+      ]
+    },
+    {
+      "source": "/ads.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" },
+        { "key": "X-Robots-Tag", "value": "index, follow" }
+      ]
+    },
+    {
+      "source": "/.well-known/ai.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" },
+        { "key": "X-Robots-Tag", "value": "index, follow" }
+      ]
+    },
+    {
+      "source": "/.well-known/llm.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" },
+        { "key": "X-Robots-Tag", "value": "index, follow" }
+      ]
+    },
+    {
+      "source": "/.well-known/mta-sts.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    },
+    {
+      "source": "/.well-known/security.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" },
+        { "key": "X-Robots-Tag", "value": "index, follow" }
+      ]
+    },
+    {
+      "source": "/llms.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" },
+        { "key": "X-Robots-Tag", "value": "index, follow" }
+      ]
+    },
+    {
+      "source": "/llms-full.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" },
+        { "key": "X-Robots-Tag", "value": "index, follow" }
+      ]
+    },
+    {
+      "source": "/k7x2nq8m/sitemap.xml",
+      "headers": [
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    },
+    {
+      "source": "/k7x2nq8m/llms.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" },
+        { "key": "X-Robots-Tag", "value": "index, follow" }
+      ]
+    },
+    {
+      "source": "/k7x2nq8m/humans.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" },
+        { "key": "X-Robots-Tag", "value": "index, follow" }
+      ]
+    },
+    {
+      "source": "/k7x2nq8m",
+      "headers": [{ "key": "X-Robots-Tag", "value": "index, follow" }]
+    },
+    {
+      "source": "/site.webmanifest",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/manifest+json; charset=utf-8"
+        },
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        {
+          "key": "Permissions-Policy",
+          "value": "geolocation=(), microphone=(), camera=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://aiwebsitedetector.com https://community.mis.temple.edu https://*.temple.edu https://app.joinhandshake.com https://*.joinhandshake.com https://joinhandshake-production.imgix.net https://*.imgix.net https://media.licdn.com https://static.licdn.com https://*.licdn.com; font-src 'self'; connect-src 'self' https://api.microlink.io; frame-src 'self' https://docs.google.com; form-action 'self' https://docs.google.com mailto:; upgrade-insecure-requests"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": ".*\\.vercel\\.app" }],
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" }
+      ]
+    }
+  ]
+}

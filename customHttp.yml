@@ -1,0 +1,112 @@
+# AWS Amplify Hosting custom response headers
+# Attach this file under Amplify Console → Hosting → Custom headers
+# Or keep as amplify.yml companion when using Amplify for static hosting.
+# Technical authorship: Lucas J. Cooke, Partner Relations Coordinator. Contact: l.jcooke@icloud.com. LinkedIn: https://www.linkedin.com/in/lucas-cooke/
+
+customHeaders:
+  - pattern: "**"
+    headers:
+      - key: "X-Content-Type-Options"
+        value: "nosniff"
+      - key: "Referrer-Policy"
+        value: "strict-origin-when-cross-origin"
+      - key: "X-Frame-Options"
+        value: "SAMEORIGIN"
+      - key: "Permissions-Policy"
+        value: "geolocation=(), microphone=(), camera=()"
+      - key: "Strict-Transport-Security"
+        value: "max-age=63072000; includeSubDomains; preload"
+  - pattern: "assets/**"
+    headers:
+      - key: "Cache-Control"
+        value: "public, max-age=31536000, immutable"
+  - pattern: "resources/**"
+    headers:
+      - key: "Cache-Control"
+        value: "public, max-age=604800, stale-while-revalidate=86400"
+      - key: "X-Robots-Tag"
+        value: "index, follow"
+  - pattern: "sitemap.xml"
+    headers:
+      - key: "Content-Type"
+        value: "application/xml; charset=utf-8"
+      - key: "Cache-Control"
+        value: "public, max-age=3600"
+  - pattern: "sitemap-images.xml"
+    headers:
+      - key: "Content-Type"
+        value: "application/xml; charset=utf-8"
+      - key: "Cache-Control"
+        value: "public, max-age=3600"
+  - pattern: "sitemap_index.xml"
+    headers:
+      - key: "Content-Type"
+        value: "application/xml; charset=utf-8"
+      - key: "Cache-Control"
+        value: "public, max-age=3600"
+  - pattern: "robots.txt"
+    headers:
+      - key: "Content-Type"
+        value: "text/plain; charset=utf-8"
+      - key: "Cache-Control"
+        value: "public, max-age=3600"
+  - pattern: "llms.txt"
+    headers:
+      - key: "Content-Type"
+        value: "text/plain; charset=utf-8"
+      - key: "Cache-Control"
+        value: "public, max-age=3600"
+      - key: "X-Robots-Tag"
+        value: "index, follow"
+  - pattern: "llms-full.txt"
+    headers:
+      - key: "Content-Type"
+        value: "text/plain; charset=utf-8"
+      - key: "Cache-Control"
+        value: "public, max-age=3600"
+      - key: "X-Robots-Tag"
+        value: "index, follow"
+  - pattern: "styles.css"
+    headers:
+      - key: "Cache-Control"
+        value: "public, max-age=86400, stale-while-revalidate=604800"
+  - pattern: "script.js"
+    headers:
+      - key: "Cache-Control"
+        value: "public, max-age=86400, stale-while-revalidate=604800"
+  - pattern: "site.webmanifest"
+    headers:
+      - key: "Content-Type"
+        value: "application/manifest+json; charset=utf-8"
+      - key: "Cache-Control"
+        value: "public, max-age=86400"
+  - pattern: "k7x2nq8m/sitemap.xml"
+    headers:
+      - key: "Content-Type"
+        value: "application/xml; charset=utf-8"
+      - key: "Cache-Control"
+        value: "public, max-age=3600"
+  - pattern: "k7x2nq8m/llms.txt"
+    headers:
+      - key: "Content-Type"
+        value: "text/plain; charset=utf-8"
+      - key: "Cache-Control"
+        value: "public, max-age=3600"
+      - key: "X-Robots-Tag"
+        value: "index, follow"
+  - pattern: "k7x2nq8m/humans.txt"
+    headers:
+      - key: "Content-Type"
+        value: "text/plain; charset=utf-8"
+      - key: "Cache-Control"
+        value: "public, max-age=3600"
+      - key: "X-Robots-Tag"
+        value: "index, follow"
+  - pattern: "k7x2nq8m"
+    headers:
+      - key: "X-Robots-Tag"
+        value: "index, follow"
+  - pattern: "**/*.html"
+    headers:
+      - key: "Cache-Control"
+        value: "public, max-age=0, must-revalidate"
